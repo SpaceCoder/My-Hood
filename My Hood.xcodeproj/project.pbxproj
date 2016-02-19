@@ -12,6 +12,7 @@
 		4500B8421C769A0B00E5502E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4500B8401C769A0B00E5502E /* Main.storyboard */; };
 		4500B8441C769A0B00E5502E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4500B8431C769A0B00E5502E /* Assets.xcassets */; };
 		4500B8471C769A0B00E5502E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4500B8451C769A0B00E5502E /* LaunchScreen.storyboard */; };
+		4500B84F1C76A32100E5502E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4500B84E1C76A32100E5502E /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4500B8431C769A0B00E5502E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4500B8461C769A0B00E5502E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4500B8481C769A0B00E5502E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4500B84E1C76A32100E5502E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		4500B83B1C769A0B00E5502E /* My Hood */ = {
 			isa = PBXGroup;
 			children = (
+				4500B8501C76A4D200E5502E /* Model */,
+				4500B8511C76A4D900E5502E /* View */,
+				4500B8521C76A4E600E5502E /* Controller */,
 				4500B83C1C769A0B00E5502E /* AppDelegate.swift */,
-				4500B83E1C769A0B00E5502E /* ViewController.swift */,
-				4500B8401C769A0B00E5502E /* Main.storyboard */,
 				4500B8431C769A0B00E5502E /* Assets.xcassets */,
-				4500B8451C769A0B00E5502E /* LaunchScreen.storyboard */,
 				4500B8481C769A0B00E5502E /* Info.plist */,
 			);
 			path = "My Hood";
+			sourceTree = "<group>";
+		};
+		4500B8501C76A4D200E5502E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4500B84E1C76A32100E5502E /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4500B8511C76A4D900E5502E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4500B8401C769A0B00E5502E /* Main.storyboard */,
+				4500B8451C769A0B00E5502E /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4500B8521C76A4E600E5502E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4500B83E1C769A0B00E5502E /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4500B84F1C76A32100E5502E /* Post.swift in Sources */,
 				4500B83F1C769A0B00E5502E /* ViewController.swift in Sources */,
 				4500B83D1C769A0B00E5502E /* AppDelegate.swift in Sources */,
 			);

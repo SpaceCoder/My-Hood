@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //Properties
+    var PostArray = [Post]()
+    
     //Outlets
     @IBOutlet weak var PostTable: UITableView!
 
@@ -29,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return PostArray.count
     }
 
 }
