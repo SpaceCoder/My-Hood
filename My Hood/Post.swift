@@ -14,6 +14,18 @@ class Post {
     private var _Description:String
     private var _PostImage: UIImage
     
+    var Title: String {
+        return _Title
+    }
+    
+    var Description: String {
+        return _Description
+    }
+    
+    var PostImage: UIImage {
+        return _PostImage
+    }
+    
     init(title: String, description: String, image: UIImage) {
         _Title = title
         _Description = description

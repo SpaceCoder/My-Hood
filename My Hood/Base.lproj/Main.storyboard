@@ -62,25 +62,25 @@
                                     <constraint firstAttribute="height" constant="70" id="zzb-h7-sOb"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cHm-zH-Yd8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cHm-zH-Yd8">
                                 <rect key="frame" x="20" y="78" width="560" height="514"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="87" id="iee-wo-vua" customClass="PostCell" customModule="My_Hood" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iee-wo-vua" id="MLa-rb-zcH">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="86"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="iee-wo-vua" id="MLa-rb-zcH">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="sgx-JA-vmp">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="sgx-JA-vmp">
                                                     <rect key="frame" x="8" y="8" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="L46-Fg-KJe"/>
                                                         <constraint firstAttribute="width" secondItem="sgx-JA-vmp" secondAttribute="height" multiplier="1:1" id="opC-Zu-Qwh"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-Wd-csn" userLabel="Title">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-Wd-csn" userLabel="Title">
                                                     <rect key="frame" x="86" y="8" width="466" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="QPa-5s-s7j"/>
@@ -89,7 +89,7 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-VR-p2S" userLabel="Description">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-VR-p2S" userLabel="Description">
                                                     <rect key="frame" x="86" y="33" width="466" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="46" id="pJP-DU-fBW"/>
@@ -114,7 +114,7 @@
                                         <connections>
                                             <outlet property="PostDescription" destination="e2K-VR-p2S" id="RdW-YK-tEX"/>
                                             <outlet property="PostImage" destination="sgx-JA-vmp" id="DqJ-eE-Efg"/>
-                                            <outlet property="PostText" destination="xa3-Wd-csn" id="3XZ-E0-8Hn"/>
+                                            <outlet property="PostTitle" destination="xa3-Wd-csn" id="SRj-Nc-P3B"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -17,17 +17,11 @@ class PostCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    func ConfigureCell (title: String, description: String, image: UIImage){
-        PostTitle.text = title
-        PostDescription.text = description
-        PostImage.image = image
+    func ConfigureCell (post: Post){
+        PostTitle.text = post.Title
+        PostDescription.text = post.Description
+        PostImage.image = post.PostImage
     }
 
 }

@@ -24,7 +24,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        <#code#>
+        if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
+            let post = PostArray[indexPath.row]
+            cell.ConfigureCell(post)
+            return cell
+        } else {
+            let cell = PostCell()
+            return cell
+        }
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
