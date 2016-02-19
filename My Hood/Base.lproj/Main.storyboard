@@ -268,7 +268,7 @@
                     <connections>
                         <outlet property="AddPicBtn" destination="qxc-89-F0U" id="75V-l5-aFM"/>
                         <outlet property="EnterDescription" destination="mTc-iF-0ij" id="V0x-tQ-TaB"/>
-                        <outlet property="EnterIamage" destination="TGd-5p-qZS" id="rmz-5Z-XPK"/>
+                        <outlet property="EnterImage" destination="TGd-5p-qZS" id="A0n-ay-XU1"/>
                         <outlet property="EnterTitle" destination="x77-tU-1MH" id="ybd-7c-a0n"/>
                     </connections>
                 </viewController>

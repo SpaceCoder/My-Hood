@@ -11,15 +11,18 @@ import UIKit
 class AddPostVC: UIViewController {
 
     //Outlets
-    @IBOutlet weak var EnterIamage: UIImageView!
+    @IBOutlet weak var EnterImage: UIImageView!
     @IBOutlet weak var AddPicBtn: UIButton!
     @IBOutlet weak var EnterTitle: UITextField!
     @IBOutlet weak var EnterDescription: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        EnterImage.layer.cornerRadius = EnterImage.frame.width/2
+        EnterImage.clipsToBounds = true
+        AddPicBtn.layer.cornerRadius = AddPicBtn.frame.width/2
+        AddPicBtn.clipsToBounds = true
     }
 
     
