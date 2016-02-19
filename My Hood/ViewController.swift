@@ -42,5 +42,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return PostArray.count
     }
 
+    @IBAction func AddPostBtn(sender: AnyObject) {
+        performSegueWithIdentifier("GoToAddPost", sender: nil)
+    }
 }
 

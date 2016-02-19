@@ -44,6 +44,9 @@
                                             <constraint firstAttribute="width" constant="47" id="YJ0-va-EhP"/>
                                         </constraints>
                                         <state key="normal" image="camera"/>
+                                        <connections>
+                                            <action selector="AddPostBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gse-fT-jQB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1803921568627451" green="0.52941176470588236" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,11 +129,29 @@
                     </view>
                     <connections>
                         <outlet property="PostTable" destination="cHm-zH-Yd8" id="n3C-QC-gPD"/>
+                        <segue destination="PVn-mn-vQd" kind="show" identifier="GoToAddPost" id="K4V-Lo-LIi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="352" y="389"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eVc-E9-sch">
+            <objects>
+                <viewController id="PVn-mn-vQd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xwx-Ak-cRA"/>
+                        <viewControllerLayoutGuide type="bottom" id="J5A-lR-bQ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vq1-kq-FPp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MV2-DI-vS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="389"/>
         </scene>
     </scenes>
     <resources>
