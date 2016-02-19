@@ -8,8 +8,10 @@
 
 import UIKit
 
-class AddPostVC: UIViewController {
-
+class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    //Properties
+    var ImagePicker: UIImagePickerController!
+    
     //Outlets
     @IBOutlet weak var EnterImage: UIImageView!
     @IBOutlet weak var AddPicBtn: UIButton!
@@ -23,6 +25,9 @@ class AddPostVC: UIViewController {
         EnterImage.clipsToBounds = true
         AddPicBtn.layer.cornerRadius = AddPicBtn.frame.width/2
         AddPicBtn.clipsToBounds = true
+        
+        ImagePicker = UIImagePickerController()
+        ImagePicker.delegate = self
     }
 
     
@@ -31,11 +36,17 @@ class AddPostVC: UIViewController {
     }
 
     @IBAction func AddPicBtn(sender: AnyObject) {
-        
+        sender.setTitle("", forState: .Normal)
+        presentViewController(ImagePicker, animated: true, completion: nil)
     }
 
     @IBAction func AddPostBtn(sender: AnyObject) {
         
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        ImagePicker.dismissViewControllerAnimated(true, completion: nil)
+        EnterImage.image = image
     }
     
 }

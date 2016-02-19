@@ -190,7 +190,7 @@
                                     <constraint firstItem="LeV-c0-kBL" firstAttribute="leading" secondItem="dyA-1j-jdN" secondAttribute="leading" constant="8" id="zk5-5r-ToA"/>
                                 </constraints>
                             </view>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="TGd-5p-qZS" userLabel="Image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TGd-5p-qZS" userLabel="Image">
                                 <rect key="frame" x="195" y="95" width="210" height="210"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="I6a-9U-Sem"/>
