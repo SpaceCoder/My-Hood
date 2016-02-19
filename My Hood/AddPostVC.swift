@@ -10,6 +10,12 @@ import UIKit
 
 class AddPostVC: UIViewController {
 
+    //Outlets
+    @IBOutlet weak var EnterIamage: UIImageView!
+    @IBOutlet weak var AddPicBtn: UIButton!
+    @IBOutlet weak var EnterTitle: UITextField!
+    @IBOutlet weak var EnterDescription: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +27,16 @@ class AddPostVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func CancelBtn(sender: AnyObject) {
+        
     }
-    */
 
+    @IBAction func AddPicBtn(sender: AnyObject) {
+        
+    }
+
+    @IBAction func AddPostBtn(sender: AnyObject) {
+        
+    }
+    
 }
