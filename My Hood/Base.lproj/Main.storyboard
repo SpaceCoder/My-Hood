@@ -22,21 +22,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38D-ow-1aL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="zFa-dX-e9T">
-                                        <rect key="frame" x="545" y="25" width="47" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="AcG-ph-CpZ"/>
-                                            <constraint firstAttribute="width" secondItem="zFa-dX-e9T" secondAttribute="height" multiplier="47:35" id="Mtb-XQ-9Hh"/>
-                                            <constraint firstAttribute="width" constant="53" id="clw-Qg-3WD"/>
-                                            <constraint firstAttribute="height" constant="35" id="qES-P2-r5T"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="AcG-ph-CpZ"/>
-                                                <exclude reference="clw-Qg-3WD"/>
-                                            </mask>
-                                        </variation>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerlogo" translatesAutoresizingMaskIntoConstraints="NO" id="rTR-xs-Gu3">
                                         <rect key="frame" x="245" y="20" width="111" height="40"/>
                                         <constraints>
@@ -52,11 +37,19 @@
                                             </mask>
                                         </variation>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKg-Yt-xaQ" userLabel="Camera">
+                                        <rect key="frame" x="545" y="25" width="47" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="C4u-Qa-dfo"/>
+                                            <constraint firstAttribute="width" constant="47" id="YJ0-va-EhP"/>
+                                        </constraints>
+                                        <state key="normal" image="camera"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1803921568627451" green="0.52941176470588236" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="zFa-dX-e9T" secondAttribute="trailing" constant="8" id="bT6-Yo-EsD"/>
-                                    <constraint firstAttribute="bottom" secondItem="zFa-dX-e9T" secondAttribute="bottom" constant="10" id="i2b-ZD-sis"/>
+                                    <constraint firstAttribute="trailing" secondItem="DKg-Yt-xaQ" secondAttribute="trailing" constant="8" id="GmK-Yq-1ed"/>
+                                    <constraint firstAttribute="bottom" secondItem="DKg-Yt-xaQ" secondAttribute="bottom" constant="10" id="PuP-Pw-nRX"/>
                                     <constraint firstItem="rTR-xs-Gu3" firstAttribute="centerX" secondItem="38D-ow-1aL" secondAttribute="centerX" id="lFO-ni-ldM"/>
                                     <constraint firstAttribute="bottom" secondItem="rTR-xs-Gu3" secondAttribute="bottom" constant="10" id="r2k-nL-lnm"/>
                                     <constraint firstAttribute="height" constant="70" id="zzb-h7-sOb"/>
@@ -137,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="360" y="400"/>
+            <point key="canvasLocation" x="352" y="389"/>
         </scene>
     </scenes>
     <resources>
