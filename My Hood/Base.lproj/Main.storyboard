@@ -231,7 +231,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHj-My-7xu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHj-My-7xu" userLabel="AddPostBtn">
                                 <rect key="frame" x="20" y="430" width="560" height="30"/>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.44705882352941179" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -267,7 +267,6 @@
                     </view>
                     <connections>
                         <outlet property="AddPicBtn" destination="qxc-89-F0U" id="75V-l5-aFM"/>
-                        <outlet property="AddPostBtn" destination="BHj-My-7xu" id="fGM-69-1qa"/>
                         <outlet property="EnterDescription" destination="mTc-iF-0ij" id="V0x-tQ-TaB"/>
                         <outlet property="EnterIamage" destination="TGd-5p-qZS" id="rmz-5Z-XPK"/>
                         <outlet property="EnterTitle" destination="x77-tU-1MH" id="ybd-7c-a0n"/>
