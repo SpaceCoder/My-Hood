@@ -24,7 +24,7 @@ class AddPostVC: UIViewController {
 
     
     @IBAction func CancelBtn(sender: AnyObject) {
-        
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
     @IBAction func AddPicBtn(sender: AnyObject) {
