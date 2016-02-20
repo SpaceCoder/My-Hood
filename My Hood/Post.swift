@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class Post {
-    private var _Title: String
-    private var _Description:String
-    private var _PostImage: UIImage
+class Post: NSObject, NSCoding {
+    private var _Title: String!
+    private var _Description:String!
+    private var _PostImage: String!
     
     var Title: String {
         return _Title
@@ -22,13 +22,30 @@ class Post {
         return _Description
     }
     
-    var PostImage: UIImage {
+    var PostImage: String {
         return _PostImage
     }
     
-    init(title: String, description: String, image: UIImage) {
+    init(title: String, description: String, image: String) {
         _Title = title
         _Description = description
         _PostImage = image
+    }
+    
+    override init() {
+        
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        self.init()
+        self._Title = aDecoder.decodeObjectForKey("Title") as? String
+        self._Description = aDecoder.decodeObjectForKey("Description") as? String
+        self._PostImage = aDecoder.decodeObjectForKey("PostImage") as? String
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(_Title, forKey: "Title")
+        aCoder.encodeObject(_Description, forKey: "Description")
+        aCoder.encodeObject(_PostImage, forKey: "PostImage")
     }
 }
