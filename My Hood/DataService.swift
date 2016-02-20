@@ -31,6 +31,8 @@ class DataService {
                 _PostArray = TempPostArray
             }
         }
+        
+        NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: "PostLoaded", object: nil))
     }
     
     func AddPost(post: Post) {
