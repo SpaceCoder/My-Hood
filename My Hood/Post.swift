@@ -44,8 +44,8 @@ class Post: NSObject, NSCoding {
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(_Title, forKey: "Title")
-        aCoder.encodeObject(_Description, forKey: "Description")
-        aCoder.encodeObject(_PostImage, forKey: "PostImage")
+        aCoder.encodeObject(self._Title, forKey: "Title")
+        aCoder.encodeObject(self._Description, forKey: "Description")
+        aCoder.encodeObject(self._PostImage, forKey: "PostImage")
     }
 }

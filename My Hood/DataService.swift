@@ -21,8 +21,9 @@ class DataService {
     let POSTDATA: String = "PostData"
     
     func SavePostArray() {
-        let PostData = NSKeyedArchiver.archivedDataWithRootObject(POSTDATA)
+        let PostData = NSKeyedArchiver.archivedDataWithRootObject(_PostArray)
         NSUserDefaults.standardUserDefaults().setObject(PostData, forKey: POSTDATA)
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
     
     func LoadPostArray() {

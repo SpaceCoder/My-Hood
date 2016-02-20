@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         PostTable.delegate = self
         PostTable.dataSource = self
         
+        DataService.instance.LoadPostArray()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "PostLoaded:", name: "PostLoaded", object: nil)
     }
 

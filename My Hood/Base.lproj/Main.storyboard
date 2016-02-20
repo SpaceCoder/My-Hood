@@ -65,18 +65,24 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="87" id="iee-wo-vua" customClass="PostCell" customModule="My_Hood" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="iee-wo-vua" id="MLa-rb-zcH">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iee-wo-vua" id="MLa-rb-zcH">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="sgx-JA-vmp">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="sgx-JA-vmp">
                                                     <rect key="frame" x="8" y="8" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="L46-Fg-KJe"/>
+                                                        <constraint firstAttribute="width" constant="70" id="mpy-Of-pcU"/>
                                                         <constraint firstAttribute="width" secondItem="sgx-JA-vmp" secondAttribute="height" multiplier="1:1" id="opC-Zu-Qwh"/>
                                                     </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="opC-Zu-Qwh"/>
+                                                        </mask>
+                                                    </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-Wd-csn" userLabel="Title">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-Wd-csn" userLabel="Title">
                                                     <rect key="frame" x="86" y="8" width="466" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="QPa-5s-s7j"/>
@@ -85,7 +91,7 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-VR-p2S" userLabel="Description">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-VR-p2S" userLabel="Description">
                                                     <rect key="frame" x="86" y="33" width="466" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="46" id="pJP-DU-fBW"/>
@@ -106,6 +112,11 @@
                                                 <constraint firstItem="e2K-VR-p2S" firstAttribute="leading" secondItem="sgx-JA-vmp" secondAttribute="trailing" constant="8" id="bs0-12-Mih"/>
                                                 <constraint firstItem="sgx-JA-vmp" firstAttribute="bottom" secondItem="MLa-rb-zcH" secondAttribute="bottomMargin" id="flC-4L-BdV"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="flC-4L-BdV"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="PostDescription" destination="e2K-VR-p2S" id="RdW-YK-tEX"/>
@@ -279,7 +290,7 @@
     </scenes>
     <resources>
         <image name="bannerlogo" width="518" height="194"/>
-        <image name="barrel-water-bridge" width="550" height="440"/>
         <image name="camera" width="100" height="77"/>
+        <image name="testImage" width="550" height="440"/>
     </resources>
 </document>

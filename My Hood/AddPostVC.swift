@@ -41,7 +41,12 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     }
 
     @IBAction func AddPostBtn(sender: AnyObject) {
-        
+        if let image = EnterImage.image, let title = EnterTitle.text, let descrip = EnterDescription.text {
+            let NewPost = Post(title: title, description: descrip, image: "")
+            DataService.instance.AddPost(NewPost)
+            
+            dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
