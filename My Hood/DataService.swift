@@ -41,4 +41,25 @@ class DataService {
         SavePostArray()
         LoadPostArray()
     }
+    
+    func SaveImageAndCreatePath(image: UIImage) -> String {
+        let imgData = UIImagePNGRepresentation(image)
+        let imgName = "image\(NSDate.timeIntervalSinceReferenceDate()).png"
+        let fullPath = DocumentsPathForFileName(imgName)
+        imgData?.writeToFile(fullPath, atomically: true)
+        return imgName
+    }
+    
+    func ImageForPath(path: String) -> UIImage? {
+        let FullPath = DocumentsPathForFileName(path)
+        let image = UIImage(named: FullPath)
+        return image
+    }
+    
+    func DocumentsPathForFileName(name: String) -> String {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let fullPath = paths[0] as NSString
+        return fullPath.stringByAppendingPathComponent(name)
+    }    
+
 }

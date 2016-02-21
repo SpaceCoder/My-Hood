@@ -24,7 +24,7 @@ class PostCell: UITableViewCell {
     func ConfigureCell (post: Post){
         PostTitle.text = post.Title
         PostDescription.text = post.Description
-        PostImage.image = UIImage(named: "testImage")
+        PostImage.image = DataService.instance.ImageForPath(post.PostImage)
     }
 
 }
